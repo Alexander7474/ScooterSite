@@ -1,0 +1,202 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+body {
+    font-family: 'Staatliches', cursive;
+    margin: 0 auto;
+    font-size: 100%;
+    background: #DADADA;
+}
+/* div style*/
+div.Div1 {
+    font-size: 200%;
+    text-align: center;
+}
+div.Div2 {
+    font-size: 170%;
+    text-align: center;
+}
+div.Div3 {
+    font-size: 140%;
+    text-align: center;
+}
+/* Carte de spot */
+iframe.carte1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* boite de formulaire */
+input.demande {
+    font-family: sans-serif;
+    width: 300px;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+textarea.demande {
+    font-family: sans-serif;
+    height: 90px;
+    width: 300px;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+/* affichage forum */
+p.forum_user_affiche{
+    color:rgb(5, 133, 5); 
+    text-align: center;
+    border: 2px solid rgb(168, 168, 168); 
+}
+p.forum_chat_affiche{
+    color:rgb(131, 5, 5); 
+    border: 2px solid rgb(168, 168, 168);
+}
+/* BUTTON ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* button simple */
+.button{
+    border-radius: 8px;
+    background-color: #444; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: rgb(189, 189, 189); /* Green */
+    color: #444;
+    transition: all .3s ease;
+}
+/* en dessuous des formulaires */
+.button_under{
+    border-radius: 4px;
+    background-color: #444; 
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Staatliches', cursive;
+}
+.button_under:hover{
+    background-color: rgb(189, 189, 189);
+    color: #444;
+    transition: all .3s ease;
+}
+/* Plus petit button */
+.button_little{
+    border-radius: 4px;
+    background-color: #444; 
+    border: none;
+    color: white;
+    padding: 1px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Staatliches', cursive;
+}
+.button_little:hover{
+    background-color: rgb(189, 189, 189);
+    color: #444;
+    transition: all .3s ease;
+}
+/* partie a remplir */
+.text_area{
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+/* END BUTTON ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* menu de nav ------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+a {text-decoration: none;}
+
+
+
+ul {
+	padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+	list-style: none;
+}
+
+nav.navigation {
+	background: #868686;
+	font-size: 0;
+	
+    position: relative;
+    width: 1920px;
+}
+
+nav > ul > li {
+	display: inline-block;
+  	font-size: 14px;
+  	padding: 0 15px;
+  	position: relative;
+}
+
+nav > ul > li > a {
+	color: #fff;
+  	display: block;
+  	padding: 20px 0;
+  	border-bottom: 3px solid transparent;
+    transition: all .3s ease;
+}
+nav > ul > li:hover > a {
+	color: #444; 
+  	border-bottom: 3px solid #444;
+}
+
+.mega-menu {
+	background: #eee;
+  	visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  	position: absolute;
+  	left: 0;
+  	width: 100%;
+    padding-bottom: 20px;
+}
+.mega-menu h3 {color: #444;}
+
+.mega-menu .container {
+    display: flex;
+}
+.mega-menu .item {
+	flex-grow: 1;
+    margin: 0 10px;
+}
+.mega-menu .item img {
+    width: 100%;
+}
+.mega-menu a {
+	border-bottom: 1px solid #ddd;
+  	color:  #727272;
+  	display: block;
+  	padding: 10px 0;
+}
+.mega-menu a:hover {color: #727272;}
+
+
+.dropdown {position: static;}
+
+.dropdown:hover .mega-menu {
+    visibility: visible;
+    opacity: 1;
+}
